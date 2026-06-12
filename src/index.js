@@ -57,7 +57,7 @@ const LaunchRequestHandler = {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speech = ssmlReply('Benvenuto! Sono Francesca, il tuo assistente Gemini. Dimmi pure cosa vuoi sapere.');
+    const speech = ssmlReply('Ciao, sono Miraya. Come posso aiutarti?');
     return handlerInput.responseBuilder.speak(speech).reprompt(speech).getResponse();
   },
 };
