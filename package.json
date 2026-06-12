@@ -1,0 +1,15 @@
+{
+  "name": "miraya-alexa-skill",
+  "version": "0.1.0",
+  "description": "Alexa‑Hosted Node.js skill that integrates Google Gemini",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "author": "mirayatechlabs",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk-core": "^2.12.0",
+    "node-fetch": "^3.3.2"
+  }
+}

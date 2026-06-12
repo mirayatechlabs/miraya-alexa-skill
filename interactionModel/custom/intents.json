@@ -1,0 +1,38 @@
+{
+  "intents": [
+    {
+      "name": "AskAssistantIntent",
+      "samples": [
+        "chiedi a {question}",
+        "dimmi {question}",
+        "raccontami {question}"
+      ],
+      "slots": [
+        {
+          "name": "question",
+          "type": "AMAZON.SearchQuery"
+        }
+      ]
+    },
+    {
+      "name": "GetCalendarEventsIntent",
+      "samples": [
+        "qual è il mio prossimo appuntamento",
+        "cosa ho in agenda oggi",
+        "mostrami i miei eventi di domani"
+      ]
+    },
+    {
+      "name": "CreateCalendarEventIntent",
+      "samples": [
+        "crea un evento chiamato {eventTitle} alle {eventTime}",
+        "aggiungi {eventTitle} al calendario per {eventDate} alle {eventTime}"
+      ],
+      "slots": [
+        {"name": "eventTitle", "type": "AMAZON.SearchQuery"},
+        {"name": "eventDate", "type": "AMAZON.DATE"},
+        {"name": "eventTime", "type": "AMAZON.TIME"}
+      ]
+    }
+  ]
+}
